@@ -92,6 +92,17 @@ a.pure-button-primary {
     font-size: 120%;
 }
 
+.icon {
+
+  width: 7%;
+}
+
+.icon img{
+  /* width: 5%; */
+  /* width: 1px; */
+  margin: 0;
+  /* border: 2px solid green; */
+}
 
 /*
  * -- MENU STYLES --
@@ -104,7 +115,9 @@ a.pure-button-primary {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 .home-menu {
-    background: #2d3e50;
+    /* background: #2d3e50; */
+    background: #000000;
+    opacity: .9;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -140,8 +153,11 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    /* background: #1f8dd6; */
-    background: #4A7856;
+    /* background: #4A7856; */
+    background-image: url("assets/sofyan_city.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     z-index: 1;
     overflow: auto;
     /* The following styles are required for the "scroll-over" effect */
@@ -166,14 +182,16 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 20px;
+    font-size: 25px;
+    word-break: none;
     font-weight: bold;
     color: white;
-    border: 3px solid white;
     padding: 1em 1.6em;
     font-weight: 100;
     border-radius: 5px;
     line-height: 1em;
+    /* width: 70%; */
+    /* border: 2px solid red; */
     /* top: -100px; */
 }
 
