@@ -216,9 +216,9 @@ a.pure-button-primary {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    top: 80%;
     width: 100%;
-    min-height: 12%;
+    min-height: 10%;
     z-index: 2;
     background: white;
 
@@ -234,7 +234,7 @@ a.pure-button-primary {
     font-weight: 400;
     /* text-transform: uppercase; */
     letter-spacing: 0.1em;
-    margin: 2em 0 1em;
+    margin: 4em 0 1em;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
@@ -309,6 +309,20 @@ a.pure-button-primary {
 
 }
 
+.grid-div {
+  /* display: grid; */
+  /* justify-content: space-around; */
+  /* align-content: center; */
+  /* justify-items: center; */
+  border: 1px solid red;
+}
+.grid-sec {
+  border: 1px solid green;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
  * On desktops and other large devices, we want to over-ride some
@@ -319,4 +333,12 @@ a.pure-button-primary {
     .splash-head {
         font-size: 300%;
     }
+}
+
+.break-width {
+  /* border: 1px solid red; */
+  width: 75%;
+  margin-left: 5rem;
+  white-space: normal;
+  word-break: break-word;
 }
