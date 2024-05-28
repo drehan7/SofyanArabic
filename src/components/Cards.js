@@ -7,9 +7,6 @@ import CardItem from './CardItem';
 
 function Cards() {
 
-  const onClick = (e) => {
-      console.log("Testing");
-  }
   return (
       <>
       <div id="cards"></div>

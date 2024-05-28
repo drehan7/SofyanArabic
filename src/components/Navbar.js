@@ -29,7 +29,7 @@ function Navbar() {
         <div className='navbar-container'>
           {logo && (
           <Link to="/" className='navbar-logo'>
-            <img src="/images/sofyan_logo.ico"/>
+            <img src="/images/sofyan_logo.ico" alt="logo"/>
           </Link>
           )}
           {!logo && (
