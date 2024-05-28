@@ -9,6 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run: CI="false" npm run build
       - name: Deploy
         # uses: actions/checkout@v3
         run: curl -X POST -d {} https://api.netlify.com/build_hooks/${{ secrets.NETLIFY_BUILD_KEY }}
