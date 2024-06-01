@@ -13,8 +13,8 @@ function HeroSection() {
 
   return (
       <>
-        <div className='hero-container'>
-          <div className="background"></div>
+        <div className='hero-container' id="hero">
+          <div className="home-background"></div>
           <h1>Soufiane Arabic</h1>
           <p>Learn Arabic At Your Pace</p>
           <div className='hero-btns'>

@@ -9,10 +9,7 @@
   scroll-behavior: smooth;
 }
 
-.home,
-.services,
-.products,
-.sign-up {
+.home {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -21,7 +18,6 @@
 }
 
 .services {
-  /*background-image: url('/images/img-2.jpg');*/
   background-image: url('/images/sofyan_city.jpeg');
   background-position: center;
   background-size: cover;
@@ -30,25 +26,88 @@
   font-size: 100px;
 }
 
-.products {
-  background-image: url('/images/img-1.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+.about {
+  background-color: #eeeae9;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
 
-.sign-up {
-  background-image: url('/images/img-8.jpg');
+.about-background {
+  background-image: url('/images/sofyan_fountain.jpeg');
+  position: absolute;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(3px);
 }
 
-.background {
+.about_header {
+    background: #000;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.about_section {
+    display: flex;
+    background-color: black;
+    height: 55vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_card {
+    background-color: white;
+    border-radius: 5%;
+    width: 50%;
+    height: 10vh;
+}
+
+.about__grid__container {
+    max-width: 1120px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10rem;
+    row-gap: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.info_card_main {
+    border: 1px solid white;
+    padding: 1rem;
+    max-width: 1120px;
+}
+
+.info_card_text {
+    font-size: 1.3rem;
+    padding: 5px;
+    font-style: italic;
+}
+
+.contact_header {
+    background: #fff;
+    color: #000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact_container {
+    display: flex;
+    background-color: white;
+    height: 55vh;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-background {
   position: absolute;
   background-image: url('/images/sofyan_city.jpeg');
   background-repeat: no-repeat;
