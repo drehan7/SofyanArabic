@@ -1,13 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { handleHome, handleAbout, handleContact } from "./common.js";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [logo, setLogo] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+
+    const _handleHome = (e) => {
+        handleHome(e);
+        setClick(false);
+    }
+
+    const _handleAbout = (e) => {
+        handleAbout(e);
+        setClick(false);
+    }
+
+    const _handleContact = (e) => {
+        handleContact(e)
+        setClick(false);
+
+    }
 
   const showLogo = () => {
       if (window.innerWidth <= 960) {
@@ -33,7 +49,7 @@ function Navbar() {
           </Link>
           )}
           {!logo && (
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/' className='navbar-logo' onClick={_handleHome}>
             SoufianeArabic
           </Link>
           )}
@@ -42,24 +58,24 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/' className='nav-links' onClick={_handleHome}>
                 Home
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/about'
+                to="/"
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={_handleAbout}
               >
                 About
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/contact'
+                to='/'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={_handleContact}
               >
                 Contact
               </Link>

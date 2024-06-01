@@ -4,6 +4,7 @@ import './Cards.css';
 import './Button.css';
 import { Button } from './Button';
 import CardItem from './CardItem';
+import { handleAbout, handleContact } from "./common.js"
 
 function Cards() {
 
@@ -47,20 +48,18 @@ function Cards() {
         </div>
       </div>
           <div className='buttons'>
-            <Link to="/about">
             <Button
               buttonStyle='btn--test'
+              onClick={handleAbout}
             >
-              Find Out More
+              More Info
             </Button>
-            </Link>
-            <Link to="/contact">
             <Button
               buttonStyle='btn--test'
+              onClick={handleContact}
             >
               Contact Me
             </Button>
-            </Link>
           </div>
     </div>
       </>

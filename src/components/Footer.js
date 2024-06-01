@@ -13,6 +13,7 @@ function Footer() {
             </Link>
           </div>
           <small className='website-rights'>SoufianeArabic © 2024</small>
+        {/*
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'
@@ -55,6 +56,7 @@ function Footer() {
               <i className='fab fa-linkedin' />
             </Link>
           </div>
+        */}
         </div>
       </section>
     </div>

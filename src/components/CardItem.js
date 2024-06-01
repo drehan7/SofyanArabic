@@ -17,4 +17,3 @@ function CardItem(props) {
 }
 
 export default CardItem;
-/*<figure className='cards__item__pic-wrap' data-category={props.label}> <img className='cards__item__img' alt='' src={props.src} /> </figure>*/
