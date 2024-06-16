@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { handleHome } from "./common.js"
 
 const LINKS = {
     "linkedin": "https://www.linkedin.com/in/soufiane-el-mouaffaq-0750101b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -14,7 +15,7 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
           <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
+            <Link to='/' className='social-logo' onClick={handleHome}>
               SoufianeArabic
             </Link>
           </div>
