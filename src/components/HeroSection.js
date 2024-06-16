@@ -13,7 +13,7 @@ function HeroSection() {
 
   return (
       <>
-        <div className='hero-container' id="hero">
+        <article className='hero-container' id="hero">
           <div className="home-background"></div>
           <h1>Soufiane Arabic</h1>
           <p>Learn Arabic At Your Pace</p>
@@ -27,7 +27,7 @@ function HeroSection() {
               Learn More
             </Button>
           </div>
-        </div>
+        </article>
       </>
   );
 }

@@ -35,6 +35,10 @@
   font-size: 2rem;
 }
 
+#about {
+    padding-top: 3rem;
+}
+
 .about-background {
   background-image: url('/images/sofyan_fountain.jpeg');
   position: absolute;
@@ -56,7 +60,7 @@
 .about_section {
     display: flex;
     background-color: black;
-    height: 55vh;
+    height: 65vh;
     color: white;
     align-items: center;
     justify-content: center;
@@ -91,22 +95,6 @@
     font-style: italic;
 }
 
-.contact_header {
-    background: #fff;
-    color: #000;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.contact_container {
-    display: flex;
-    background-color: white;
-    height: 55vh;
-    color: black;
-    align-items: center;
-    justify-content: center;
-}
-
 .home-background {
   position: absolute;
   background-image: url('/images/sofyan_city.jpeg');
@@ -117,4 +105,42 @@
   height: 100%;
   z-index: -1;
   filter: blur(3px);
+}
+
+.contact_header {
+    color: #000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact_main_container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 55vh;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact_autobio {
+    font-size: 20px;
+    max-width: 50%;
+}
+
+.contact_pfp img{
+    border-radius: 50%;
+    height: 20vh;
+    width: auto;
+}
+
+.contact_email_socials {
+    font-size: 22px;
+    text-decoration: underline;
 }
