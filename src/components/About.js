@@ -16,6 +16,7 @@ export default function About() {
     return (
         <>
         <div id="about"></div>
+        <div className="about_container">
         <div className="about_header">
             <h1>About The Classes</h1>
         </div>
@@ -39,6 +40,7 @@ export default function About() {
                     text="Payments are processed through PayPal for convenience."
                 />
             </div>
+        </div>
         </div>
         </>
     );

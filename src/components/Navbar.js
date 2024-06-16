@@ -44,7 +44,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           {logo && (
-          <Link to="/" className='navbar-logo'>
+          <Link to="/" className='navbar-logo' onClick={_handleHome}>
             <img src="/images/sofyan_logo.ico" alt="logo"/>
           </Link>
           )}
